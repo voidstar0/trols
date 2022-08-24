@@ -1,0 +1,13 @@
+{
+  "name": "trols",
+  "description": "ls for twitter trolls",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*/status/*"],
+      "run_at": "document_idle",
+      "js": ["contentscript.js"]
+    }
+  ]
+}
